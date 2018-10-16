@@ -1,0 +1,69 @@
+string_times
+def string_times(str, n):
+
+ return str*n  
+
+-----------------------
+front_times
+def front_times(str, n):
+  
+if len(str)>=3:
+ 
+   return (str[0]+str[1]+str[2])*n
+ 
+ else:
+ 
+   return str*n
+--------------------------
+string_bits
+def string_bits(str):
+
+ ex=""
+ 
+for i in range(0,len(str),2):
+   
+ ex=ex+str[i]
+
+ return ex
+
+
+------------------------
+string_splosion
+def string_splosion(str):
+ 
+ ex=""
+ 
+ for i in range(0,len(str)):
+ 
+  if i==0:
+
+     ex=ex+str[i]
+  
+ if i!=0:
+   
+  ex=ex+str[:i+1]
+   
+  
+  return ex
+----------------------
+last2
+def last2(str):
+ 
+ counter=0
+ 
+ ex=str[len(str)-2:]
+
+  if len(str)<2:
+
+   return 0
+ 
+ else:
+ 
+  for i in range(len(str)-2):
+     
+if (str[i:i+2])==ex:
+    
+  counter=counter+1
+  
+return counter
+------------------------

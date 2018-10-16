@@ -1,0 +1,95 @@
+sleep_in 
+def sleep_in(weekday, vacation):
+
+  if weekday and not vacation:
+ 
+   return False
+
+  else:
+ 
+  return True
+-----------------------------
+monkey_trouble
+def monkey_trouble(a_smile, b_smile):
+  
+if (a_smile and b_smile) or (not a_smile and not b_smile):
+
+   return True
+ 
+ else:
+   
+ return False
+  
+
+------------------------------
+sum_double
+def sum_double(a,b):
+ 
+ if a!=b:
+   
+ return a+b
+  
+else:
+  
+  return (a+b)*2
+-------------------------------
+diff21
+def diff21(n):
+ 
+ if n>21:
+   
+ return (n-21)*2
+ 
+ else:
+   
+ return 21-n
+
+-------------------------------
+parrot_trouble
+def parrot_trouble(talking, hour):
+
+  if talking and (hour<7 or hour>20):
+   
+  return True
+ 
+ else:
+ 
+    return False
+
+------------------------------
+makes10
+def makes10(a, b):
+  
+if a==10 or b==10 or a+b==10:
+ 
+  return True
+
+  else:
+ 
+   return False
+
+---------------------------------
+near_hundred
+def near_hundred(n):
+
+  if abs(100-n)<=10 or abs(200-n)<=10:
+ 
+   return True
+ 
+ else:
+ 
+   return False
+
+--------------------------------
+not_string
+def not_string(str):
+ 
+ if str[:3]=="not":
+  
+ return str
+  
+else:
+ 
+   return "not "+str
+
+

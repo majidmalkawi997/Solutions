@@ -1,0 +1,77 @@
+count_evens
+
+def count_evens(nums):
+
+  counter=0
+  for i in range (len(nums)):
+ 
+   if nums[i]%2==0:
+ 
+    counter=counter+1
+ 
+ return counter   
+
+---------------------------------
+big_diff 
+
+def big_diff(nums):
+  
+ bigger=0
+   
+smaller=nums[0]
+ 
+  if len(nums)>=1:
+ 
+   for i in range(len(nums)):
+
+      if bigger<nums[i]:
+    
+    bigger=nums[i]
+   
+   if smaller>nums[i]:
+   
+     smaller=nums[i]
+  
+ return bigger-smaller
+------------------------------
+sum67 
+
+def sum67(nums):
+ 
+ sum=0
+
+  flag=True
+if len(nums)==0:
+   
+return 0
+  
+else:
+  
+   for i in range(len(nums)):
+    
+   if nums[i]!=6 and flag:
+  
+       sum=sum+nums[i]
+   
+    elif nums[i]!=7:
+    
+     flag=False
+      
+ else:
+
+ flag=True
+ 
+ return sum     
+         
+-----------------------------
+has22 
+
+def has22(nums):
+
+  for i in range(len(nums)-1):
+
+    if nums[i]==2 and nums[i+1]==2:
+ 
+     return True
+
+  return False

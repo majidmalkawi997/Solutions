@@ -1,0 +1,49 @@
+double_char
+def double_char(str):
+
+  s1=""
+ 
+ for i in range(0,len(str)):
+  
+ s1=s1+(str[i]*2)
+  
+return s1
+---------------------------------
+count_hi
+
+def count_hi(str):
+  
+counter=0
+ 
+ for i in range(len(str)-1):
+   
+ if str[i]+str[i+1]=="hi":
+   
+  counter=counter+1
+
+  return counter  
+
+-----------------------------
+cat_dog
+def cat_dog(str):
+ 
+ c1=0
+ 
+ c2=0
+  
+for i in range(len(str)-2):
+   
+ if str[i:i+3]=="dog":
+   
+  c2=c2+1
+ 
+   if str[i:i+3]=="cat":
+ 
+    c1=c1+1
+  if c1==c2:
+ 
+   return True
+ 
+ else:
+
+    return False
